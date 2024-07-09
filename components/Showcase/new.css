@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Impact-Regular";
+    src: url("https://anima-uploads.s3.amazonaws.com/projects/6247dc035a1f4749cec51e2c/fonts/impact.ttf")
+      format("truetype");
+  }
+
+  @font-face {
+    font-family: "Futura-Bold";
+    src: url("https://anima-uploads.s3.amazonaws.com/projects/64a945fb2b0c66cef00d1753/fonts/futura-bold.ttf")
+      format("truetype");
+  }
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+  * {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0px;
+    height: 100%;
+  }
+  /* a blue color as a generic focus style */
+  button:focus-visible {
+    outline: 2px solid #4a90e2 !important;
+    outline: -webkit-focus-ring-color auto 5px !important;
+  }
+  a {
+    text-decoration: none;
+  }
