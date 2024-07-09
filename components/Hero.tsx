@@ -12,14 +12,22 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="animate-fadeIn h-screen flex flex-col justify-center pb-20  font-righteous text-transparent  pl-2"
-      style={{
-        backgroundImage: "url('/hero-stars.png'), url('/hero-line.png')",
-        backgroundPosition: "top left, top left",
-        backgroundSize: "cover, cover",
-        backgroundRepeat: "no-repeat",
-      }}
+      className="animate-fadeIn h-screen mx-5 md:mx-10  flex flex-col justify-center pb-20 font-righteous text-transparent  "
     >
+      <Image
+        src="/hero-bg-star.svg"
+        className="w-full object-cover absolute p-0 m-0 left-0 top-0"
+        alt="/"
+        width={1000}
+        height={1000}
+      />
+      <Image
+        src="/hero-bg-line.svg"
+        className="w-full object-cover absolute p-0 m-0 left-0 md:top-0"
+        alt="/"
+        width={1000}
+        height={1000}
+      />
       <div className="absolute z-0 top-5 mx-auto ">
         <Meteors number={20} />
       </div>

@@ -47,6 +47,9 @@ const config: Config = {
       screens: {
         xs: "470px",
       },
+      colors: {
+        'brown-800': '#8C1515', // Example brown color, adjust as needed
+      },
     },
   },
   plugins: [addVariablesForColors],

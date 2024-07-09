@@ -10,9 +10,10 @@ const Header = () => {
   const buttonRef = useRef<HTMLButtonElement | null>(null);
 
   const sections = [
-    { href: "#home", name: "Home" },
-    { href: "#event", name: "Event" },
-    { href: "#about", name: "About" },
+    { href: "/#home", name: "Home" },
+    { href: "/#timeline", name: "Timeline" },
+    { href: "/#showcase", name: "Showcase" },
+    { href: "/#faq", name: "FAQ" },
     { href: "/register", name: "Register" },
   ];
 
@@ -36,8 +37,8 @@ const Header = () => {
 
   return (
     <>
-      <div className="w-full mb-10 z-10 bg-black sticky top-5 text-white rounded-full p-1 flex items-center grad">
-        <div className="w-full bg-black top-0 text-white border rounded-full p-4 flex items-center justify-between">
+      <div className="w-full left-0 mb-10 p-[2px] z-10 bg-black fixed top-5 text-white rounded-full grad  flex items-center ">
+        <div className="w-full inset-0 bg-black top-0 text-white border rounded-full p-4 flex items-center justify-between ">
           <Image
             src="/logo.svg"
             className="w-48 md:w-72 lg:w-72 xl:w-80"

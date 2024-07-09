@@ -8,7 +8,10 @@ const Timeline = () => {
   const isSmallScreen = useMediaQuery(640);
 
   return (
-    <div className=" overflow-y-hidden w-full bg-gradient-three text-white font-semibold font-babasneu tracking-wider flex flex-col  items-center h-full">
+    <div
+      id="timeline"
+      className=" overflow-y-hidden w-full bg-gradient-three text-white font-semibold font-babasneu tracking-wider flex flex-col  items-center h-full"
+    >
       <span className=" text-[25px] sm:text-[35px] md:text-[80px] sm:pt-10 ">
         EVENT TIMELINE
       </span>
